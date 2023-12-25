@@ -1,0 +1,4 @@
+#Sun Jun 25 16:21:33 ICT 2023
+coordBool=false
+scaleBool=true
+timerBool=true
