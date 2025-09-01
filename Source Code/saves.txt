@@ -1,9 +1,0 @@
-#Tue Aug 16 22:18:17 ICT 2022
-l1=5
-l3=13
-l4=12
-coordBool=false
-l5=13
-l6=12
-timerBool=true
-scaleBool=true
