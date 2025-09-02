@@ -173,6 +173,12 @@ public class Level3 extends BasePanel implements ActionListener, MouseListener, 
 				}
 				g.fillRect(825, 275, 50, 25);
 			}
+			if (running) {
+				g.setColor(Color.white);
+					g.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 30));
+						g.drawString("Hover here!", 1240, 535);
+						g.drawString("Click here!", 240, 660);
+			}
 			//******************************************************
 		}
 	}

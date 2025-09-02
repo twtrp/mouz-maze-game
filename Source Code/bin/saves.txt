@@ -1,0 +1,6 @@
+#Tue Sep 02 09:49:03 ICT 2025
+l1=4
+l2=6
+coordBool=false
+timerBool=true
+scaleBool=true

@@ -1,2 +1,0 @@
-Please set Eclipse's text file encoding to UTF-8
-before running the program in Eclipse in order for unicode strings to be drawn properly.

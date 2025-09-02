@@ -15,7 +15,7 @@ public class GameFrame extends BasePanel implements MouseListener, MouseMotionLi
 	public static int moveX;
 	public static int moveY;
 
-	public static KFrame frame = new KFrame("MOUZ MAZE - By Piraboon Piyawarapong 6422781466");
+	public static KFrame frame = new KFrame("MOUZ MAZE");
 	static JFrame cFrame = new JFrame();
 		public static JLabel moveLB = new JLabel("   Live (x,y): N/A,N/A");
 		public static JLabel colorLB = new JLabel("   Live (Color): N/A,N/A,N/A");
@@ -53,11 +53,11 @@ public class GameFrame extends BasePanel implements MouseListener, MouseMotionLi
 			g.fillRect(0, 0, 1600, 900);
 		g.setColor(Color.white);
 			g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 45));
-				g.drawString("- SIIT30 DES103 Final Project -", 465, 250);
-			g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 90));
-				g.drawString("Piraboon Piyawarapong", 285, 400);
-			g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 65));
-				g.drawString("6422781466", 625, 525);
+				g.drawString("Made by", 710, 300);
+			g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 120));
+				g.drawString("ttewtor", 600, 420);
+			g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 30));
+				g.drawString("with JComponent", 675, 500);
 			g.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 45));
 				g.drawString("< Click to continue >", 320+200, 650+100);
 	}

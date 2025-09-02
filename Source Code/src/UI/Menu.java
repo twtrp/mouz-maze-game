@@ -33,11 +33,13 @@ public class Menu extends BasePanel implements ActionListener {
 			g.fillRect(0, 0, 1600, 900);
 		g.setColor(Color.white);
 			g.setFont(new Font(Font.MONOSPACED, Font.BOLD, 200));
-				g.drawString("mouz", 450+200, 275+90);
-				g.drawString("maze", 450+200, 450+90);
+				g.drawString("mouz", 450+200, 285+60);
+				g.drawString("maze", 450+200, 440+60);
 			int[] x = {250+200, 250+200, 300+200, 325+200, 345+200, 320+200, 370+200};
-			int[] y = {225+90, 400+90, 365+90, 420+90, 410+90, 355+90, 355+90};
+			int[] y = {225+60, 400+60, 365+60, 420+60, 410+60, 355+60, 355+60};
 			g.fillPolygon(x, y, y.length);
+			g.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 30));
+				g.drawString("(c) 2022 ttewtor", 10, 820);
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {

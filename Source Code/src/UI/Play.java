@@ -15,7 +15,7 @@ public class Play extends BasePanel implements ActionListener {
 		private KLabel titleLB = new KLabel("PLAY");
 	private KPanel playPN = new KPanel();
 		private KPanel playPN_1 = new KPanel();
-			private PlayBT lvl1BT = new PlayBT("l1", "Ⅰ", "Beginning");
+			private PlayBT lvl1BT = new PlayBT("l1", "Ⅰ", "First Steps");
 			private PlayBT lvl2BT = new PlayBT("l2", "Ⅱ", "Onion");
 			private PlayBT lvl3BT = new PlayBT("l3", "Ⅲ", "Locks & Levers");
 			private PlayBT lvl4BT = new PlayBT("l4", "Ⅳ", "Claustrophobia");

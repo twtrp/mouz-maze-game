@@ -1,0 +1,39 @@
+name: Build Multi-Platform
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Compile Java files
+      run: |
+        cd "Source Code/src"
+        javac -encoding UTF-8 -d ../bin -cp . *.java KComponent/*.java Levels/*.java System/*.java UI/*.java
+        
+    - name: Create JAR
+      run: |
+        cd "Source Code/bin"
+        jar cvfe MouzMaze.jar RunMouzMaze .
+        
+    - name: Upload JAR artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: MouzMaze-${{ matrix.os }}
+        path: Source Code/bin/MouzMaze.jar

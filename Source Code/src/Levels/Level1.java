@@ -14,7 +14,7 @@ public class Level1 extends BasePanel implements ActionListener, MouseListener, 
 	//******************************************************
 	static String lvlCode = "l1";
 	public static String lvlNum = "Ⅰ";
-	public static String lvlName = "Beginning";
+	public static String lvlName = "First Steps";
 	static int star2 = 9;
 	static int star3 = 5;
 	private int xOff = -50;
